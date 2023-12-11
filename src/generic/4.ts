@@ -6,11 +6,11 @@ class Component<T> {
   constructor(public props: T) {}
 }
 
-interface Title {
+interface ITitle {
   title: string;
 }
 
-class Page extends Component<Title> {
+class Page extends Component<ITitle> {
   pageInfo() {
     console.log(this.props.title);
   }
